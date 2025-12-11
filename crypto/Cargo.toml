@@ -9,3 +9,4 @@ chacha20poly1305 = "0.10"     # Alternative AEAD
 rand = "0.8"                  # Key generation
 ring = "0.17"                 # Key management primitives
 threshold_crypto = "0.4"      # Threshold signatures
+blake3 = "1.5"                # Fast hashing
