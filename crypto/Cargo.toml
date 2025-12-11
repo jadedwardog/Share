@@ -1,0 +1,11 @@
+[package]
+name = "crypto"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aes-gcm = "0.10"              # AEAD encryption
+chacha20poly1305 = "0.10"     # Alternative AEAD
+rand = "0.8"                  # Key generation
+ring = "0.17"                 # Key management primitives
+threshold_crypto = "0.4"      # Threshold signatures

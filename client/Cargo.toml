@@ -1,0 +1,11 @@
+[package]
+name = "client"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.36", features = ["full"] }
+reqwest = { version = "0.11", features = ["json", "gzip"] }
+sled = "0.34"                 # Local state persistence
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
