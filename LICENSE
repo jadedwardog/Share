@@ -1,33 +1,15 @@
-# GNU Affero General Public License v3.0 (AGPL-3.0)
+GNU Affero General Public License v3.0 (AGPL-3.0)
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, version 3.
 
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY.
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more details.
 
 You should have received a copy of the GNU Affero General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
 
-- This license applies to the platform code, specifications, and protocol implementations.
-- Operating a modified version as a network service triggers AGPL’s source disclosure requirement.
-- User-generated content is explicitly excluded from the scope of this license. Such content is governed independently under `CONTENT_LICENSE.md`. When redistributing the platform code, you must include an appropriate copyright notice and a copy of this license with each distribution.;
-keep intact all notices stating that this License and any non-permissive terms added in accord with section 7 apply to the code;
-keep intact all notices of the absence of any warranty; and give all recipients a copy of this License along with the Program.
-
-  You may charge any price or no price for each copy that you convey,
-and you may offer support or warranty protection for a fee.
-
-  5. Conveying Modified Source Versions.
-
-  You may convey a work based on the Program, or the modifications to
-produce it from the Program, in the form of source code under the
-terms of section 4, provided that you also meet all of these conditions:
-
-    a) The work must carry prominent notices stating that you modified
-    it, and giving a relevant date.
-
-    b) The work must carry prominent notices stating that it is
-    released under this License and any conditions added under section
-    7.  This requirement modifies the requirement in section 4 to
-    "keep intact all notices".
+- This license applies only to the platform code, specifications, and protocol implementations contained in this repository.
+- User-generated content is explicitly excluded from the scope of this license. Such content is governed separately under `CONTENT_LICENSE.md`.
+- When redistributing the platform code, you must include a clear copyright notice and a copy of this license with each distribution.
+- If you modify the platform code and run it as part of a network service, you are required to make the complete source code of your modified version available to all users of that service.    "keep intact all notices".
 
     c) You must license the entire work, as a whole, under this
     License to anyone who comes into possession of a copy.  This
