@@ -8,11 +8,9 @@ You should have received a copy of the GNU Affero General Public License along w
 
 - This license applies to the platform code, specifications, and protocol implementations.
 - Operating a modified version as a network service triggers AGPL’s source disclosure requirement.
-- User-generated content is explicitly excluded and governed by `CONTENT_LICENSE.md`.iately publish on each copy an appropriate copyright notice;
-keep intact all notices stating that this License and any
-non-permissive terms added in accord with section 7 apply to the code;
-keep intact all notices of the absence of any warranty; and give all
-recipients a copy of this License along with the Program.
+- User-generated content is explicitly excluded from the scope of this license. Such content is governed independently under `CONTENT_LICENSE.md`. When redistributing the platform code, you must include an appropriate copyright notice and a copy of this license with each distribution.;
+keep intact all notices stating that this License and any non-permissive terms added in accord with section 7 apply to the code;
+keep intact all notices of the absence of any warranty; and give all recipients a copy of this License along with the Program.
 
   You may charge any price or no price for each copy that you convey,
 and you may offer support or warranty protection for a fee.
