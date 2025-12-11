@@ -43,6 +43,4 @@ Last updated: 2025-12-11
 
 ## Concrete next steps I will take
 
-1. Draft `CRYPTO_PROTOCOL_SPEC.md` to capture chosen AEAD algorithm(s), KDF, envelope formats, expiry semantics, and threshold signature primitives.
-2. Draft `GOVERNANCE_CONSTITUTION.md` and `MANIFESTO.md` to provide the constitutional text and guiding principles.
-3. Align `Cargo.toml` dependencies in the workspace with the recommendations in `PROJECT_GROUNDWORK.md` (e.g., `blake3`, `chacha20poly1305`, `threshold_crypto`) and add minimal integration tests for the crypto primitives.
+1. Align `Cargo.toml` dependencies in the workspace with the recommendations in `PROJECT_GROUNDWORK.md` (e.g., `blake3`, `chacha20poly1305`, `threshold_crypto`) and add minimal integration tests for the crypto primitives.
