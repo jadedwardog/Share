@@ -4,6 +4,29 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-substrate = { git = "https://github.com/paritytech/substrate", branch = "master" }
+# Pin to the latest stable Polkadot SDK release tag
+polkadot-sdk = { git = "https://github.com/paritytech/polkadot-sdk", tag = "polkadot-stable2509-2" }
+
+# FRAME and SP crates are now part of the SDK, so pin them to the same tag
+sp-core = { git = "https://github.com/paritytech/polkadot-sdk", tag = "polkadot-stable2509-2" }
+sp-runtime = { git = "https://github.com/paritytech/polkadot-sdk", tag = "polkadot-stable2509-2" }
+sp-io = { git = "https://github.com/paritytech/polkadot-sdk", tag = "polkadot-stable2509-2" }
+frame-support = { git = "https://github.com/paritytech/polkadot-sdk", tag = "polkadot-stable2509-2" }
+frame-system = { git = "https://github.com/paritytech/polkadot-sdk", tag = "polkadot-stable2509-2" }
+scale-info    = { version = "2", default-features = false, features = ["derive"] }
+codec         = { package = "parity-scale-codec", version = "3", default-features = false, features = ["derive"] }
+
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
+
+[features]
+default = ["std"]
+std = [
+    "frame-support/std",
+    "frame-system/std",
+    "sp-core/std",
+    "sp-runtime/std",
+    "sp-io/std",
+    "scale-info/std",
+    "codec/std",
+]
