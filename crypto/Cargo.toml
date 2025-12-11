@@ -1,12 +1,41 @@
 [package]
-name = "crypto"
+name = "platform-crypto"
 version = "0.1.0"
 edition = "2021"
+description = "Cryptographic primitives for the decentralized platform: hashing, encryption, KDF, and threshold signatures."
 
 [dependencies]
-aes-gcm = "0.10"              # AEAD encryption
-chacha20poly1305 = "0.10"     # Alternative AEAD
-rand = "0.8"                  # Key generation
-ring = "0.17"                 # Key management primitives
-threshold_crypto = "0.4"      # Threshold signatures
-blake3 = "1.5"                # Fast hashing
+# Content Hashing: BLAKE3
+# Rationale: Superior speed/security ratio; supports Merkle tree parallelism.
+blake3 = "1.5"
+
+# Symmetric Encryption: XChaCha20-Poly1305
+# Rationale: Extended nonce support (192-bit) eliminates risk of nonce reuse collisions.
+chacha20poly1305 = "0.10"
+
+# Key Derivation (KDF): Argon2id
+# Rationale: Memory-hard password hashing to resist GPU/ASIC cracking of recovery keys.
+argon2 = "0.5"
+
+# Digital Signatures: Ed25519
+# Rationale: Fast, deterministic signing for individual user actions (posting, updating).
+ed25519-dalek = { version = "2.1", features = ["rand_core"] }
+
+# Threshold Signatures: BLS12-381
+# Rationale: Allows aggregation of council votes; threshold_crypto handles the polynomial/dealer logic.
+threshold_crypto = "0.4"
+
+# Key Wrapping: KW-AES-256
+# Rationale: RFC 3394 compliant key wrapping for secure envelope transmission.
+aes-kw = "0.2"
+
+# Randomness (Required for key generation and nonces)
+rand = "0.8"
+rand_core = "0.6"
+
+# Serialization (Required for Manifests and keys)
+serde = { version = "1.0", features = ["derive"] }
+serde_bytes = "0.11" # For efficient handling of byte arrays in serialization
+
+[dev-dependencies]
+hex = "0.4" # Useful for debugging and tests
